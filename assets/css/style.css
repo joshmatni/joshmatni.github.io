@@ -1871,3 +1871,69 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+.project-img img {
+  width: 100%;         /* Makes the image take up 100% of the figure width */
+  height: 200px;       /* Fixed height for all images */
+  object-fit: cover;   /* This will cover the area of the figure, cropping where necessary */
+  border-radius: 8px;  /* Optional: adds rounded corners to your images */
+}
+
+.project-img {
+  width: 100%;         /* Full width of its container */
+  height: 200px;       /* Height matches the image height */
+  overflow: hidden;    /* Prevents any overflow from the image */
+  position: relative;  /* For positioning inner elements like icons */
+  display: flex;       /* Ensures contents are flexibly aligned */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+@media (max-width: 768px) {
+  .project-img img {
+      height: 150px;   /* Smaller height for smaller screens */
+  }
+  .project-img {
+      height: 150px;
+  }
+}
+
+.download-link {
+  display: inline-block; /* This will make the <a> tag only as big as the button inside it */
+  text-decoration: none; /* Optional: Removes underline from any text inside */
+}
+
+.download-btn {
+  padding: 8px 16px; /* Smaller padding for a smaller button */
+  font-size: 14px; /* Smaller font size */
+  margin-bottom: 20px; /* More space below the button */
+  margin-top: 10px; /* Some space above the button to move it up */
+  background-color: var(--onyx); /* Or another color fitting your theme */
+  color: var(--orange-yellow-crayola);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--jet); /* Slightly darker on hover */
+  color: var(--white-1);
+}
+
+/* Adjust positioning related to the Education section */
+.section-education {
+  padding-top: 30px; /* Add more space above the education section */
+}
+
+.download-btn ion-icon {
+  margin-right: 5px; /* Adjust space between icon and text */
+  font-size: 16px; /* Smaller icon */
+}
+
+/**
+ * copyright 2022 @codewithsadee
+ * I did not code this entire thing, I used a prebuilt template from @codewithsadee 
+ 
+ However I did code and change to fit with my resume and portfolio things.
+ */
+
